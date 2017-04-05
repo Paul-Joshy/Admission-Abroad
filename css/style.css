@@ -1,0 +1,23 @@
+h3{
+    margin:0px;
+}
+
+#logoTriangle{
+    z-index: 1000;
+    background color: mediumturquoise;
+    height:10px;
+    width:10px;
+    border-right:50px;
+    border-color:purple;
+}
+
+.item img{
+    position: relative;
+    width:100%;
+    height:auto;
+}
+
+.jumbotron{
+    height: 700px;
+    width: auto;
+}
