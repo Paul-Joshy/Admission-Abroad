@@ -92,6 +92,9 @@ h3{
     /* others */
     background-color: #6ca38a;
 }
+#nav-contents{
+    z-index: 10;
+}
 
 #nav-contents a{
     color: white;
@@ -118,11 +121,18 @@ h3{
     -webkit-transition: width 0.4s ease;
 }
 
-#college-slideshow ul li:hover{
-    width:300px;
+#college-slideshow ul li:hover, .active{
+    width:250px;
 }
 
 
 #college-slideshow img{
-    height:300
+    height:300px;
+    width: 500px;
+    -moz-transition: width 0.4s ease;
+    -webkit-transition: width 0.4s ease;
+}
+
+#college-slideshow img:hover{
+    width:100%;
 }
