@@ -97,42 +97,32 @@ h3{
     color: white;
 }
 
+#nav-contents a:hover{
+    color: antiquewhite;
+}
+
 #banner{
-    height: 700px;
-    margin-top:200px;
+/*    position:absolute;*/
+    height:400px;
+    margin-top: 200px;
     background-color: teal;
 }
 
-#college-slideshow ul{
-/*    margin-right: 500px;*/
-    -moz-transition: margin-right 0.4s ease;
-    -webkit-transition: margin-right 0.4s ease;
+#college-slideshow ul li{
+    display: inline-block;
+    width:30px;
+    margin-left: 2px;
+    overflow: hidden;
+    transform:skew(-20deg);
+    -moz-transition: width 0.4s ease;
+    -webkit-transition: width 0.4s ease;
 }
 
-#college-slideshow ul:hover{
-    margin-right: 50px;
+#college-slideshow ul li:hover{
+    width:300px;
 }
 
-#college-slideshow ul li {
-            float:right;
-			width:50px;
-			height:400px;
-			overflow:hidden;
-			color:#000;
-			padding:10px;
-			overflow:hidden;
-			-moz-transition: width 0.4s ease;
-			-webkit-transition: width 0.4s ease;
-            transform: skewX(-10deg);
-		}
 
-
-#college-slideshow ul li:hover, active{
-	cursor:pointer;
-	width:300px;
-    
-}
-
-#college-slideshow ul li img{
-    box-shadow: #12345;
+#college-slideshow img{
+    height:300
 }
