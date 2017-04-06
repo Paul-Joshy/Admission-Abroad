@@ -10,38 +10,50 @@
     
     <body>
         <div class="navbar navbar-default navbar-fixed-top">
-            <div class="navbar-brand" id="brandLogo">
-                <div id="logoTriangle"></div>
-            </div><!--end brandLogo-->
             <div class="container">
-                <div class="navbar-collapse collapse navbar-responsive-collapse">
-                    <ul class="nav navbar-nav">
-                        <li class="active">
-                            <a>HOME</a>
-                        </li>
-                        <li>
-                            <a>ABOUT</a>
-                        </li>
-                        <li>
-                            <a>SERVICES</a>
-                        </li>
-                        <li>
-                            <a>PROFILE</a>
-                        </li>
-                        <li>
-                            <a>CONTACT</a>
-                        </li>
-                    </ul>
-                </div><!--end collapse-->
+                <div class="navbar-left" id="navbar-logo-container">
+                    <div id="logo-triangle"></div>
+                    <img id="navbar-logo" src="/img/logo-white.png">
+                </div>
+                <ul id="nav-contents" class="nav navbar-nav navbar-right">
+                    <li>
+                        <a>HOME</a>
+                    </li>
+                    <li>
+                        <a>ABOUT</a>
+                    </li>
+                    <li>
+                        <a>SERVICES</a>
+                    </li>
+                    <li>
+                        <a>PROFILE</a>
+                    </li>
+                    <li>
+                        <a>CONTACT</a>
+                    </li>
+                </ul>
             </div><!--end container-->
         </div><!--end navbar-->
         
-        <div class="jumbotron">
-            <div id="jumboContent" class="pull-left">
-                <h1>Admission Abroad</h1>
-                <p>The world's biggest conglomerate ever known to mankind</p>
+        <div clas="container">
+            <div class="jumbotron" id="banner">
+            <div id="banner-heading" class="col-md-4 pull-left">
+                <h2>Admission abroad is a student focused consultant in international Education</h2>
             </div>
-            <img src="img/logo.png" class="pull-right">
+                
+            <div id="college-slideshow" class="pull-right">
+                <div class="col-sm-12">
+                <ul>
+                  <li><img src="img/college1.jpg"></li>
+                  <li><img src="img/slide2.jpg"></li>
+                  <li><img src="img/slide1.jpg"></li>
+                  <li><img src="img/slide2.jpg"></li>
+                  <li><img src="img/slide1.jpg"></li>
+                </ul>
+                </div>
+                
+            </div><!--end college-slideshow-->
         </div><!--end jumbotron-->
+        </div><!--end container-->
     </body>
 </html>

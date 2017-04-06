@@ -1,28 +1,139 @@
+/*
+    Globals
+*/
+
+body{
+    color: white;
+    background-color: teal;
+}
+
 h3{
     margin: 0px;
 }
 
-#brandLogo{
-    width: 100%;
-    padding: 0px;
+/*
+    Navbar
+*/
+
+.navbar.navbar-fixed-top{
+    height: 50px;
+    
+    border: none;
+    background: none;
+    background-color: purple;
 }
 
-#logoTriangle{
-    height: 0px;
-    width: 0px;
-    border-top: 50px solid purple;
-    border-right: 50px solid transparent;
-    border-bottom: 0px solid transparent;
-    border-left: 0px solid transparent;
-}
-
-.item img{
+#navbar-logo-container{
     position: relative;
-    width: 100%;
-    height: auto;
 }
 
-.jumbotron{
+#navbar-logo{
+    height: 250px;
+    margin: 10px 20px;
+    
+    /* position */
+    position: relative;
+    z-index: 1;
+}
+
+#logo-triangle{
+    /* display */
+    display: block;
+    
+    /* size */
+    height: 400px;
+    width: 200px;
+    
+    /* position */
+    position: absolute;
+    left: 0px;
+    bottom: 92px;
+    transform: rotate(-15deg);
+    z-index: 0;
+    
+    /* others */
+    background-color: #6ca38a;
+}
+
+#logo-triangle:before{
+    content: '';
+    
+    /* display */
+    display: block;
+    
+    /* size */
+    height: 400px;
+    width: 1000px;
+    
+    /* position */
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    
+    /* others */
+    background-color: #6ca38a;
+}
+
+#logo-triangle:after{
+    content: '';
+    
+    /* display */
+    display: block;
+    
+    /* size */
+    height: 400px;
+    width: 1000px;
+    
+    /* position */
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    
+    /* others */
+    background-color: #6ca38a;
+}
+
+#nav-contents a{
+    color: white;
+}
+
+#banner{
     height: 700px;
-    width: auto;
+    margin-top:200px;
+    background-color: teal;
+}
+
+#college-slideshow ul{
+    margin-right: 500px;
+    -moz-transition: margin-right 0.4s ease;
+    -webkit-transition: margin-right 0.4s ease;
+}
+
+#college-slideshow ul:hover{
+    margin-right: 50px;
+}
+
+#college-slideshow ul li {
+            float:right;
+			width:50px;
+			height:400px;
+			overflow:hidden;
+			color:#000;
+            margin:0px;
+			padding:10px;
+			overflow:hidden;
+			-moz-transition: width 0.4s ease;
+			-webkit-transition: width 0.4s ease;
+            transform: skewX(-10deg);
+		}
+
+
+#college-slideshow ul li:hover, active{
+	cursor:pointer;
+	width:500px;
+    
+}
+
+#college-slideshow ul li img{
+    box-shadow: #12345;
 }
