@@ -16,7 +16,7 @@ h3{
 */
 
 .navbar.navbar-fixed-top{
-    height: 50px;
+    height: 100px;
     
     border: none;
     background: none;
@@ -28,8 +28,17 @@ h3{
 }
 
 #navbar-logo{
-    height: 250px;
-    margin: 10px 20px;
+    height: 100px;
+    margin: 0px 20px;
+    
+    /* position */
+    position: relative;
+    z-index: 1;
+}
+
+#brand-text{
+    height: 100px;
+    margin: 0px 0px;
     
     /* position */
     position: relative;
@@ -41,58 +50,29 @@ h3{
     display: block;
     
     /* size */
-    height: 400px;
-    width: 200px;
+    height: 100px;
+    width: 820px;
     
     /* position */
     position: absolute;
-    left: 0px;
-    bottom: 92px;
-    transform: rotate(-15deg);
+    margin-left:-700px; 
+    margin-bottom:20px ;
+    transform: skew(-74deg);
     z-index: 0;
     
     /* others */
     background-color: #6ca38a;
 }
 
-#logo-triangle:before{
-    content: '';
-    
-    /* display */
-    display: block;
-    
-    /* size */
-    height: 400px;
-    width: 1000px;
-    
-    /* position */
+#navbar-skew-left{
     position: absolute;
-    right: 0px;
-    top: 0px;
-    
-    /* others */
-    background-color: #6ca38a;
+    width: 100px;
+    height: 100px;
+    background-color: teal;
 }
 
-#logo-triangle:after{
-    content: '';
-    
-    /* display */
-    display: block;
-    
-    /* size */
-    height: 400px;
-    width: 1000px;
-    
-    /* position */
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    
-    /* others */
-    background-color: #6ca38a;
-}
 #nav-contents{
+    background-color: teal;
     z-index: 10;
 }
 
@@ -107,7 +87,7 @@ h3{
 #banner{
 /*    position:absolute;*/
     height:400px;
-    margin-top: 200px;
+    margin-top: 100px;
     background-color: teal;
 }
 
